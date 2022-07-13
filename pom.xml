@@ -83,7 +83,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <!--mysql-->
+      <!--mysql5-->
       <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
