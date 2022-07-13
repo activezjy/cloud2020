@@ -32,8 +32,13 @@ public class PyamentController {
         return result;
     }
 
-    //====服务熔断
-    @GetMapping("/payment/circuit/{id}")
+    /**
+     * 熔断
+     * @param id
+     * @return: java.lang.String
+     * @Date: 2022/6/22-11:39
+     **/
+    @GetMapping
     public String paymentCircuitBreaker(@PathVariable("id") Integer id){
         String result = paymentService.paymentCircuitBreaker(id);
         log.info("*****result:"+result);
